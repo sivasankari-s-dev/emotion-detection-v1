@@ -46,7 +46,7 @@ if uploaded_file:
     analyze_image(image)
 elif camera_image:
     image = Image.open(camera_image)
-    st.image(image, caption="Webcam Image", width="stretch)
+    st.image(image, caption="Webcam Image", width="stretch")
     analyze_image(image)
 else:
     st.info("Upload an image or use your webcam to detect emotion")
